@@ -6,13 +6,20 @@
 	"main": "index.js",
 	"author": "LeftLetter",
 	"license": "Apache-2.0",
-	"packageManager": "pnpm@9.5.0",
+	"engines": {
+		"node": "20.15.1"
+	},
+	"packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"prepare": "husky"
 	},
 	"keywords": [],
 	"devDependencies": {
 		"@biomejs/biome": "^1.8.3",
-		"@types/node": "^20.14.10"
+		"@commitlint/cli": "^19.3.0",
+		"@commitlint/config-conventional": "^19.2.2",
+		"@nestjs/cli": "^10.4.2",
+		"@types/node": "^20.14.10",
+		"husky": "^9.0.11"
 	}
 }
