@@ -1,0 +1,18 @@
+{
+	"name": "node-monorepo-template",
+	"version": "1.0.0",
+	"private": true,
+	"description": "",
+	"main": "index.js",
+	"author": "LeftLetter",
+	"license": "Apache-2.0",
+	"packageManager": "pnpm@9.5.0",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"devDependencies": {
+		"@biomejs/biome": "^1.8.3",
+		"@types/node": "^20.14.10"
+	}
+}

@@ -1,0 +1,33 @@
+services:
+  app:
+    build:
+      context: app
+      dockerfile: Dockerfile.app.dev
+    depends_on:
+      - db
+    env_file:
+      - app/.env.app.dev
+    ports:
+      - 3005:3000
+    volumes:
+      - ../../:/opt/app:cached
+      - node-modules:/opt/app/app/backend/node_modules
+      - hidden-frontend:/opt/app/app/frontend
+      - hidden-frontend-settings:/opt/app/.devcontainer/frontend
+    # Overrides default command so things don't shut down after the process ends.
+    command: /bin/sh -c "while sleep 1000; do :; done"
+  db:
+    build:
+      context: db
+      dockerfile: Dockerfile.db.dev
+    env_file:
+      - db/.env.db.dev
+    ports:
+      - 3308:3306
+    volumes:
+      - db:/var/lib/mysql
+volumes:
+  node-modules:
+  db:
+  hidden-frontend:
+  hidden-frontend-settings:
