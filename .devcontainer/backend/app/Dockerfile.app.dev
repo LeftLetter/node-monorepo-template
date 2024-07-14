@@ -11,3 +11,8 @@ RUN wget -qO- https://get.pnpm.io/install.sh | ENV="$HOME/.bashrc" SHELL="$(whic
 # Allow only pnpm to be used
 RUN corepack enable npm
 RUN corepack enable yarn
+
+# Install tbls
+ENV TBLS_VERSION=1.76.1
+RUN curl -o tbls.deb -L https://github.com/k1LoW/tbls/releases/download/v$TBLS_VERSION/tbls_$TBLS_VERSION-1_arm64.deb
+RUN dpkg -i tbls.deb
