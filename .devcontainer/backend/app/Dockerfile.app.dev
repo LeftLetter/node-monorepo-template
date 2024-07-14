@@ -5,12 +5,14 @@ ENV APP_ROOT /opt/app
 RUN mkdir $APP_ROOT
 WORKDIR $APP_ROOT
 
-# Install pnpm
-RUN wget -qO- https://get.pnpm.io/install.sh | ENV="$HOME/.bashrc" SHELL="$(which bash)" bash -
-
-# Allow only pnpm to be used
+# Activate corepack
 RUN corepack enable npm
 RUN corepack enable yarn
+RUN corepack enable pnpm
+
+# Install pnpm
+ENV PNPM_VERSION=9.5.0
+RUN corepack use pnpm@$PNPM_VERSION
 
 # Install tbls
 ENV TBLS_VERSION=1.76.1
