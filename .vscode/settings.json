@@ -15,50 +15,6 @@
 	"workbench.editor.languageDetection": false,
 	// Code spell checker settings
 	"cSpell.enabled": true,
-	"cSpell.patterns": [
-		{
-			"description": "Japanese letters",
-			"name": "japaneseLetters",
-			"pattern": "[０-９Ａ-Ｚａ-ｚぁ-んァ-ヶ亜-熙纊-黑]+"
-		},
-		{
-			"description": "Library and tool names",
-			"name": "libraryAndToolNames",
-			"pattern": [
-				"pnpx",
-				"devcontainer",
-				"commitlint",
-				"biomejs",
-				"nestjs",
-				"lefthook",
-				"mdlint"
-			]
-		},
-		{
-			"description": "Business-specific words",
-			"name": "businessSpecificWords",
-			"pattern": []
-		},
-		{
-			"description": "Other words",
-			"name": "otherWords",
-			"pattern": []
-		}
-	],
-	"cSpell.ignoreRegExpList": [
-		"japaneseLetters",
-		"libraryAndToolNames",
-		"businessSpecificWords",
-		"otherWords"
-	],
-	"cSpell.ignorePaths": [
-		".devcontainer",
-		".vscode",
-		"node_modules",
-		"pnpm-lock.yaml",
-		"*.cjs",
-		"*.js"
-	],
 	// TypeScript settings
 	"typescript.preferences.importModuleSpecifier": "non-relative"
 }
