@@ -31,67 +31,6 @@
 				// If the debugger does not work, please uncomment
 				// "ms-vscode.js-debug-nightly",
 			]
-			// 	"settings": {
-			// 		// Indentation settings
-			// 		"editor.tabSize": 2,
-			// 		"editor.detectIndentation": false,
-			// 		"editor.insertSpaces": true,
-			// 		// Formatter settings
-			// 		"editor.formatOnSave": true,
-			// 		"editor.codeActionsOnSave": {
-			// 			"source.addMissingImports": "explicit",
-			// 			"quickfix.biome": "explicit",
-			// 			"source.organizeImports.biome": "explicit",
-			// 			"source.fixAll.markdownlint": "explicit"
-			// 		},
-			// 		"editor.defaultFormatter": "biomejs.biome",
-			// 		// Code spell checker settings
-			// 		"cSpell.enabled": true,
-			// 		"cSpell.patterns": [
-			// 			{
-			// 				"description": "Japanese letters",
-			// 				"name": "japaneseLetters",
-			// 				"pattern": "[０-９Ａ-Ｚａ-ｚぁ-んァ-ヶ亜-熙纊-黑]+"
-			// 			},
-			// 			{
-			// 				"description": "Library and tool names",
-			// 				"name": "libraryAndToolNames",
-			// 				"pattern": [
-			// 					"hono",
-			// 					"esbenp",
-			// 					"devcontainer",
-			// 					"commitlint",
-			// 					"biomejs"
-			// 				]
-			// 			},
-			// 			{
-			// 				"description": "Business-specific words",
-			// 				"name": "businessSpecificWords",
-			// 				"pattern": []
-			// 			},
-			// 			{
-			// 				"description": "Other words",
-			// 				"name": "otherWords",
-			// 				"pattern": []
-			// 			}
-			// 		],
-			// 		"cSpell.ignoreRegExpList": [
-			// 			"japaneseLetters",
-			// 			"libraryAndToolNames",
-			// 			"businessSpecificWords",
-			// 			"otherWords"
-			// 		],
-			// 		"cSpell.ignorePaths": [
-			// 			".devcontainer",
-			// 			".vscode",
-			// 			"node_modules",
-			// 			"pnpm-lock.yaml",
-			// 			"*.cjs",
-			// 			"*.js"
-			// 		],
-			// 		// TypeScript settings
-			// 		"typescript.preferences.importModuleSpecifier": "non-relative"
-			// 	}
 		}
 	}
 }
