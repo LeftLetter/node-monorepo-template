@@ -24,7 +24,15 @@
 		{
 			"description": "Library and tool names",
 			"name": "libraryAndToolNames",
-			"pattern": ["hono", "esbenp", "devcontainer", "commitlint", "biomejs"]
+			"pattern": [
+				"pnpx",
+				"devcontainer",
+				"commitlint",
+				"biomejs",
+				"nestjs",
+				"lefthook",
+				"mdlint"
+			]
 		},
 		{
 			"description": "Business-specific words",

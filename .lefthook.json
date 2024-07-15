@@ -13,11 +13,14 @@
 		"commands": {
 			"biome": {
 				"glob": "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}",
-				"run": "pnpm biome {staged_files}"
+				"run": "pnpm biome:check {staged_files}"
 			},
 			"markdownlint": {
 				"glob": "*.{md}",
-				"run": "pnpm markdownlint-cli2 {staged_files}"
+				"run": "pnpm mdlint:check {staged_files}"
+			},
+			"cspell": {
+				"run": "pnpm cspell:check {staged_files}"
 			}
 		}
 	}

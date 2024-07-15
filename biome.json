@@ -11,7 +11,11 @@
 	},
 	"json": {
 		"parser": {
-			"allowComments": true
+			"allowComments": true,
+			"allowTrailingCommas": true
+		},
+		"formatter": {
+			"trailingCommas": "none"
 		}
 	},
 	"javascript": {

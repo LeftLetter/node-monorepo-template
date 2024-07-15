@@ -131,6 +131,10 @@ dist
 
 # pnpm
 .pnpm-store/*
+v8-compile-cache-0/*
 
 # macOS
 .DS_Store
+
+# cSpell
+.cspellcache
