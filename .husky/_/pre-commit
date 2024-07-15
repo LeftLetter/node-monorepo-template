@@ -32,6 +32,18 @@ call_lefthook()
     elif test -f "$dir/node_modules/lefthook/bin/index.js"
     then
       "$dir/node_modules/lefthook/bin/index.js" "$@"
+    elif test -f "$dir/./node_modules/lefthook-${osArch}-${cpuArch}/bin/lefthook"
+    then
+      "$dir/./node_modules/lefthook-${osArch}-${cpuArch}/bin/lefthook" "$@"
+    elif test -f "$dir/./node_modules/@evilmartians/lefthook/bin/lefthook-${osArch}-${cpuArch}/lefthook"
+    then
+      "$dir/./node_modules/@evilmartians/lefthook/bin/lefthook-${osArch}-${cpuArch}/lefthook" "$@"
+    elif test -f "$dir/./node_modules/@evilmartians/lefthook-installer/bin/lefthook"
+    then
+      "$dir/./node_modules/@evilmartians/lefthook-installer/bin/lefthook" "$@"
+    elif test -f "$dir/./node_modules/lefthook/bin/index.js"
+    then
+      "$dir/./node_modules/lefthook/bin/index.js" "$@"
     
     elif bundle exec lefthook -h >/dev/null 2>&1
     then
@@ -57,4 +69,4 @@ call_lefthook()
   fi
 }
 
-call_lefthook run "pre-push" "$@"
+call_lefthook run "pre-commit" "$@"

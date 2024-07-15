@@ -3,7 +3,6 @@
 	"version": "1.0.0",
 	"private": true,
 	"description": "",
-	"main": "index.js",
 	"author": "LeftLetter",
 	"license": "Apache-2.0",
 	"engines": {
@@ -13,9 +12,9 @@
 	"scripts": {
 		"fe": "pnpm -C app/frontend",
 		"be": "pnpm -C app/backend",
-		"lefthook": "lefthook install",
-		"biome": "biome",
-		"commitlint": "commitlint"
+		"lefthook:init": "lefthook install",
+		"biome": "biome check --no-errors-on-unmatched --files-ignore-unknown=true",
+		"commitlint": "commitlint --edit \"$1\""
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.8.3",
@@ -23,6 +22,7 @@
 		"@commitlint/config-conventional": "^19.2.2",
 		"@nestjs/cli": "^10.4.2",
 		"@types/node": "^20.14.10",
-		"lefthook": "^1.7.2"
+		"lefthook": "^1.7.2",
+		"markdownlint-cli2": "^0.13.0"
 	}
 }
