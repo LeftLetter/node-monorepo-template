@@ -36,5 +36,5 @@
 		"businessSpecificWords",
 		"otherWords"
 	],
-	"ignorePaths": [".devcontainer", ".vscode", "pnpm-lock.yaml", ".gitignore"]
+	"ignorePaths": [".devcontainer", "pnpm-lock.yaml", ".gitignore"]
 }

@@ -16,7 +16,7 @@
 		"lefthook:init": "lefthook install",
 		"biome:check": "biome check --no-errors-on-unmatched --files-ignore-unknown=true",
 		"mdlint:check": "markdownlint-cli2",
-		"cspell:check": "cspell lint",
+		"cspell:check": "cspell lint --no-must-find-files",
 		"commitlint": "commitlint --edit \"$1\""
 	},
 	"devDependencies": {
