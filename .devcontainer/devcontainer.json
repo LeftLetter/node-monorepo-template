@@ -1,5 +1,5 @@
 {
-	"name": "frontend",
+	"name": "node-monorepo-template",
 	"dockerComposeFile": ["docker-compose.dev.yml"],
 	"service": "app",
 	"shutdownAction": "none",

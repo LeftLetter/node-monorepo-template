@@ -5,13 +5,11 @@ services:
       dockerfile: Dockerfile.app.dev
     depends_on:
       - db
-    env_file:
-      - app/.env.app.dev
-    ports:
-      - 3001:3000
     volumes:
-      - ../../:/opt/app:cached
-      - node-modules:/opt/app/app/backend/node_modules
+      - ..:/opt/app:cached
+      - node-modules:/opt/app/node_modules
+      - fe-node-modules:/opt/app/app/frontend/node_modules
+      - be-node-modules:/opt/app/app/backend/node_modules
     # Overrides default command so things don't shut down after the process ends.
     command: /bin/sh -c "while sleep 1000; do :; done"
   db:
@@ -26,4 +24,6 @@ services:
       - db:/var/lib/mysql
 volumes:
   node-modules:
+  fe-node-modules:
+  be-node-modules:
   db:
