@@ -1,0 +1,14 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - 4005:4000
+    volumes:
+      - ../../:/opt/app:cached
+      - node-modules:/opt/app/app/frontend/node_modules
+    # Overrides default command so things don't shut down after the process ends.
+    command: /bin/sh -c "while sleep 1000; do :; done"
+volumes:
+  node-modules:

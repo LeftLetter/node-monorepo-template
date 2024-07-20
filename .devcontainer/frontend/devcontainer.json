@@ -1,5 +1,5 @@
 {
-	"name": "backend",
+	"name": "frontend",
 	"dockerComposeFile": ["docker-compose.dev.yml"],
 	"service": "app",
 	"shutdownAction": "none",

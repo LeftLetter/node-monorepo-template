@@ -12,8 +12,6 @@ services:
     volumes:
       - ../../:/opt/app:cached
       - node-modules:/opt/app/app/backend/node_modules
-      - hidden-frontend:/opt/app/app/frontend
-      - hidden-frontend-settings:/opt/app/.devcontainer/frontend
     # Overrides default command so things don't shut down after the process ends.
     command: /bin/sh -c "while sleep 1000; do :; done"
   db:
@@ -29,5 +27,3 @@ services:
 volumes:
   node-modules:
   db:
-  hidden-frontend:
-  hidden-frontend-settings:
