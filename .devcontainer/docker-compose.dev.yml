@@ -10,7 +10,7 @@ services:
       - node-modules:/opt/app/node_modules
       - fe-node-modules:/opt/app/app/frontend/node_modules
       - be-node-modules:/opt/app/app/backend/node_modules
-    # Overrides default command so things don't shut down after the process ends.
+    # Overrides default command so things don't shut down after the process ends
     command: /bin/sh -c "while sleep 1000; do :; done"
   db:
     build:
