@@ -2,8 +2,17 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
+			"name": "Frontend",
+			"type": "chrome",
+			"request": "attach",
+			"port": 9222,
+			"urlFilter": "http://localhost:5173/*",
+			"webRoot": "${workspaceFolder}"
+		},
+		{
+			"name": "Backend",
 			"command": "pnpm dev",
-			"name": "Run pnpm dev",
+
 			"request": "launch",
 			"type": "node-terminal"
 		}
