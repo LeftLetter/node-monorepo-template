@@ -12,7 +12,6 @@
 		{
 			"name": "Backend",
 			"command": "pnpm dev",
-
 			"request": "launch",
 			"type": "node-terminal"
 		}
