@@ -1,36 +1,38 @@
 {
-	"name": "node-monorepo-template",
-	"dockerComposeFile": ["docker-compose.dev.yml"],
-	"service": "app",
-	"shutdownAction": "none",
-	"workspaceFolder": "/opt/app",
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				// Code linter and formatter
-				"biomejs.biome",
-				// Git
-				"eamodio.gitlens",
-				"mhutchie.git-graph",
-				"donjayamanne.githistory",
-				// Code navigation
-				"streetsidesoftware.code-spell-checker",
-				"usernamehw.errorlens",
-				"bierner.comment-tagged-templates",
-				// AI
-				"github.copilot",
-				"github.copilot-chat",
-				// Other files
-				"mechatroner.rainbow-csv",
-				"janisdd.vscode-edit-csv",
-				"redhat.vscode-yaml",
-				"mikestead.dotenv",
-				// Documentation
-				"shd101wyy.markdown-preview-enhanced",
-				"DavidAnson.vscode-markdownlint"
-				// If the debugger does not work, please uncomment
-				// "ms-vscode.js-debug-nightly",
-			]
-		}
-	}
+  "name": "node-monorepo-template",
+  "dockerComposeFile": ["docker-compose.dev.yml"],
+  "service": "app",
+  "shutdownAction": "none",
+  "workspaceFolder": "/opt/app",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        // Code linter and formatter
+        "biomejs.biome",
+        // Git
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "donjayamanne.githistory",
+        "GitHub.vscode-pull-request-github",
+        // Code navigation
+        "streetsidesoftware.code-spell-checker",
+        "usernamehw.errorlens",
+        "bierner.comment-tagged-templates",
+        // AI
+        "github.copilot",
+        "github.copilot-chat",
+        // Other files
+        "mechatroner.rainbow-csv",
+        "janisdd.vscode-edit-csv",
+        "redhat.vscode-yaml",
+        "mikestead.dotenv",
+        // Documentation
+        "shd101wyy.markdown-preview-enhanced",
+        "DavidAnson.vscode-markdownlint",
+        "bpruitt-goddard.mermaid-markdown-syntax-highlighting"
+        // If the debugger does not work, please uncomment
+        // "ms-vscode.js-debug-nightly",
+      ]
+    }
+  }
 }

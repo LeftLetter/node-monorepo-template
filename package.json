@@ -1,31 +1,32 @@
 {
-	"name": "node-monorepo-template",
-	"version": "1.0.0",
-	"private": true,
-	"description": "",
-	"author": "LeftLetter",
-	"license": "Apache-2.0",
-	"engines": {
-		"node": "20.15.1"
-	},
-	"packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903",
-	"scripts": {
-		"postinstall": "pnpm lefthook:init",
-		"fe": "pnpm -C app/frontend",
-		"be": "pnpm -C app/backend",
-		"lefthook:init": "lefthook install",
-		"biome:check": "biome check --no-errors-on-unmatched --files-ignore-unknown=true",
-		"mdlint:check": "markdownlint-cli2",
-		"cspell:check": "cspell lint --no-must-find-files",
-		"commitlint": "commitlint --edit \"$1\""
-	},
-	"devDependencies": {
-		"@biomejs/biome": "^1.8.3",
-		"@commitlint/cli": "^19.3.0",
-		"@commitlint/config-conventional": "^19.2.2",
-		"@types/node": "^20.14.10",
-		"cspell": "^8.10.4",
-		"lefthook": "^1.7.2",
-		"markdownlint-cli2": "^0.13.0"
-	}
+  "name": "node-monorepo-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "author": "LeftLetter",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": "20.15.1"
+  },
+  "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903",
+  "scripts": {
+    "postinstall": "pnpm lefthook:init",
+    "fe": "pnpm -C app/frontend",
+    "be": "pnpm -C app/backend",
+    "lefthook:init": "lefthook install",
+    "biome:fix": "biome check --write",
+    "biome:check": "biome check --no-errors-on-unmatched --files-ignore-unknown=true",
+    "mdlint:check": "markdownlint-cli2",
+    "cspell:check": "cspell lint --no-must-find-files",
+    "commitlint": "commitlint --edit \"$1\""
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@types/node": "^20.14.10",
+    "cspell": "^8.10.4",
+    "lefthook": "^1.7.2",
+    "markdownlint-cli2": "^0.13.0"
+  }
 }

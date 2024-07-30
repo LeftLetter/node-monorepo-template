@@ -1,20 +1,20 @@
 {
-	// Indentation settings
-	"editor.tabSize": 2,
-	"editor.detectIndentation": false,
-	"editor.insertSpaces": true,
-	// Formatter settings
-	"editor.formatOnSave": true,
-	"editor.codeActionsOnSave": {
-		"source.addMissingImports": "explicit",
-		"quickfix.biome": "explicit",
-		"source.organizeImports.biome": "explicit",
-		"source.fixAll.markdownlint": "explicit"
-	},
-	"editor.defaultFormatter": "biomejs.biome",
-	"workbench.editor.languageDetection": false,
-	// Code spell checker settings
-	"cSpell.enabled": true,
-	// TypeScript settings
-	"typescript.preferences.importModuleSpecifier": "non-relative"
+  // Indentation settings
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  // Formatter settings
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": "explicit",
+    "quickfix.biome": "explicit",
+    "source.organizeImports.biome": "explicit",
+    "source.fixAll.markdownlint": "explicit"
+  },
+  "editor.defaultFormatter": "biomejs.biome",
+  "workbench.editor.languageDetection": false,
+  // Code spell checker settings
+  "cSpell.enabled": true,
+  // TypeScript settings
+  "typescript.preferences.importModuleSpecifier": "non-relative"
 }
