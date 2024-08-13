@@ -1,4 +1,5 @@
 {
+  "json.schemaDownload.enable": true,
   // Indentation settings
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
@@ -7,8 +8,9 @@
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.addMissingImports": "explicit",
-    "quickfix.biome": "explicit",
+    "source.organizeImports": "never",
     "source.organizeImports.biome": "explicit",
+    "quickfix.biome": "explicit",
     "source.fixAll.markdownlint": "explicit"
   },
   "editor.defaultFormatter": "biomejs.biome",
@@ -16,5 +18,7 @@
   // Code spell checker settings
   "cSpell.enabled": true,
   // TypeScript settings
-  "typescript.preferences.importModuleSpecifier": "non-relative"
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  // CSS settings
+  "css.lint.unknownAtRules": "ignore"
 }
