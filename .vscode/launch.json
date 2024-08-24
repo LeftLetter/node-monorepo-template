@@ -2,18 +2,29 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Frontend",
+      "name": "Frontend-Attach",
       "type": "chrome",
       "request": "attach",
       "port": 9222,
       "urlFilter": "http://localhost:5173/*",
-      "webRoot": "${workspaceFolder}"
+      "skipFiles": ["<node_internals>/**"],
+      "webRoot": "${workspaceFolder}/app/frontend"
+    },
+    {
+      "name": "Frontend-Launch",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9222,
+      "url": "http://localhost:5173/",
+      "skipFiles": ["<node_internals>/**"],
+      "webRoot": "${workspaceFolder}/app/frontend"
     },
     {
       "name": "Backend",
       "command": "pnpm dev",
       "request": "launch",
-      "type": "node-terminal"
+      "type": "node-terminal",
+      "cwd": "${workspaceFolder}/app/backend"
     }
   ]
 }

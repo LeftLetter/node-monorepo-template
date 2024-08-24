@@ -3,7 +3,7 @@
 <!-- Include a link to the ticket addressed by this PR -->
 * <!--  -->
 
-# 　概要 | Summary
+# 概要 | Summary
 <!-- このPRによって何が変わるかを記載 -->
 <!-- Describe what changes as a result of this PR -->
 * <!--  -->

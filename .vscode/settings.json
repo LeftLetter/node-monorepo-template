@@ -1,5 +1,6 @@
 {
   "json.schemaDownload.enable": true,
+  "editor.hover.delay": 500,
   // Indentation settings
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
