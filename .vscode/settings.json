@@ -1,25 +1,31 @@
 {
-  "json.schemaDownload.enable": true,
+  // "json.schemaDownload.enable": true,
   "editor.hover.delay": 500,
   // Indentation settings
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
   "editor.insertSpaces": true,
   // Formatter settings
+  "files.insertFinalNewline": true,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.addMissingImports": "explicit",
-    "source.organizeImports": "never",
-    "source.organizeImports.biome": "explicit",
     "quickfix.biome": "explicit",
-    "source.fixAll.markdownlint": "explicit"
+    "source.fixAll.markdownlint": "explicit",
+    "source.organizeImports": "never",
+    "source.organizeImports.biome": "explicit"
   },
   "editor.defaultFormatter": "biomejs.biome",
+  "[dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-containers"
+  },
   "workbench.editor.languageDetection": false,
   // Code spell checker settings
   "cSpell.enabled": true,
   // TypeScript settings
   "typescript.preferences.importModuleSpecifier": "non-relative",
   // CSS settings
-  "css.lint.unknownAtRules": "ignore"
+  "css.lint.unknownAtRules": "ignore",
+  // AI setting
+  "chat.agent.enabled": true
 }

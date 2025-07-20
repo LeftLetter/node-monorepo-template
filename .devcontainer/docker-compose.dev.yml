@@ -12,6 +12,13 @@ services:
       - be-node-modules:/opt/app/app/backend/node_modules
     # Overrides default command so things don't shut down after the process ends
     command: /bin/sh -c "while sleep 1000; do :; done"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+      - 1.1.1.1
+      - 1.1.0.0
+    dns_opt:
+      - "use-vc"
   db:
     build:
       context: db
@@ -21,7 +28,14 @@ services:
     ports:
       - 3307:3306
     volumes:
-      - db:/var/lib/mysql
+      - db:/var/lib/postgres
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+      - 1.1.1.1
+      - 1.1.0.0
+    dns_opt:
+      - "use-vc"
 volumes:
   node-modules:
   fe-node-modules:

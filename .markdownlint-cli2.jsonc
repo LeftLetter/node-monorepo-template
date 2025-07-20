@@ -1,0 +1,9 @@
+{
+  "config": {
+    "default": true,
+    "line_length": false,
+    "MD024": false
+  },
+  "gitignore": true,
+  "ignores": ["**/.claude/**/*.md", "**/node_modules/**/*.md", "**/.git/**/*.md", "CLAUDE.md"]
+}

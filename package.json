@@ -6,14 +6,13 @@
   "author": "LeftLetter",
   "license": "Apache-2.0",
   "engines": {
-    "node": "20.15.1"
+    "node": "22.16.0"
   },
-  "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903",
   "scripts": {
     "postinstall": "pnpm lefthook:init",
     "fe": "pnpm -C app/frontend",
     "be": "pnpm -C app/backend",
-    "lefthook:init": "lefthook install",
+    "lefthook:init": "LEFTHOOK_SKIP=checksum lefthook install",
     "biome:fix": "biome check --write",
     "biome:check": "biome check --no-errors-on-unmatched --files-ignore-unknown=true",
     "mdlint:check": "markdownlint-cli2",
@@ -21,12 +20,13 @@
     "commitlint": "commitlint --edit \"$1\""
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.8.3",
-    "@commitlint/cli": "^19.3.0",
-    "@commitlint/config-conventional": "^19.2.2",
-    "@types/node": "^20.14.10",
-    "cspell": "^8.10.4",
-    "lefthook": "^1.7.2",
-    "markdownlint-cli2": "^0.13.0"
-  }
+    "@biomejs/biome": "^2.1.2",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@types/node": "^24.0.15",
+    "cspell": "^9.2.0",
+    "lefthook": "^1.12.2",
+    "markdownlint-cli2": "^0.18.1"
+  },
+  "packageManager": "pnpm@10.13.1+sha512.37ebf1a5c7a30d5fabe0c5df44ee8da4c965ca0c5af3dbab28c3a1681b70a256218d05c81c9c0dcf767ef6b8551eb5b960042b9ed4300c59242336377e01cfad"
 }

@@ -4,6 +4,7 @@
   "service": "app",
   "shutdownAction": "none",
   "workspaceFolder": "/opt/app",
+  "postStartCommand": "git config core.autocrlf input",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -21,11 +22,12 @@
         // AI
         "github.copilot",
         "github.copilot-chat",
+        "anthropic.claude-code",
         // Other files
         "mechatroner.rainbow-csv",
         "janisdd.vscode-edit-csv",
-        "redhat.vscode-yaml",
         "mikestead.dotenv",
+        "ms-azuretools.vscode-docker",
         // Documentation
         "shd101wyy.markdown-preview-enhanced",
         "DavidAnson.vscode-markdownlint",

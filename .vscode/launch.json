@@ -6,7 +6,7 @@
       "type": "chrome",
       "request": "attach",
       "port": 9222,
-      "urlFilter": "http://localhost:5173/*",
+      "urlFilter": "http://localhost:3003/*",
       "skipFiles": ["<node_internals>/**"],
       "webRoot": "${workspaceFolder}/app/frontend"
     },
@@ -15,7 +15,7 @@
       "type": "chrome",
       "request": "launch",
       "port": 9222,
-      "url": "http://localhost:5173/",
+      "url": "http://localhost:3003/",
       "skipFiles": ["<node_internals>/**"],
       "webRoot": "${workspaceFolder}/app/frontend"
     },

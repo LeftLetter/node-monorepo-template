@@ -23,5 +23,5 @@
     }
   ],
   "ignoreRegExpList": ["japaneseLetters", "libraryAndToolNames", "businessSpecificWords", "otherWords"],
-  "ignorePaths": [".devcontainer", "pnpm-lock.yaml", ".gitignore", ".husky"]
+  "ignorePaths": [".devcontainer", "pnpm-lock.yaml", ".gitignore", ".husky", "*.svg", ".vscode"]
 }

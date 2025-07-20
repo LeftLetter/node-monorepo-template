@@ -1,6 +1,6 @@
 {
   "commit-msg": {
-    "parallel": true,
+    "parallel": false,
     "commands": {
       "commitlint": {
         "root": ".",

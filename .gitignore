@@ -138,3 +138,6 @@ v8-compile-cache-0/*
 
 # cSpell
 .cspellcache
+
+# Node.js
+node-compile-cache/*

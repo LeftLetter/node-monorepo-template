@@ -1,9 +1,18 @@
-FROM node:20.15.1
+FROM node:22.16.0-bookworm
 
 # Create home directory
-ENV APP_ROOT /opt/app
+ENV APP_ROOT=/opt/app
 RUN mkdir $APP_ROOT
 WORKDIR $APP_ROOT
+
+# Install modules
+RUN apt-get update \
+  && apt-get install -y lsof
+
+# Install tbls
+ENV TBLS_VERSION=1.85.4
+RUN curl -o tbls.deb -L https://github.com/k1LoW/tbls/releases/download/v$TBLS_VERSION/tbls_$TBLS_VERSION-1_arm64.deb
+RUN dpkg -i tbls.deb
 
 # Activate corepack
 RUN corepack enable npm
@@ -11,13 +20,12 @@ RUN corepack enable yarn
 RUN corepack enable pnpm
 
 # Install pnpm
-ENV PNPM_VERSION=9.5.0
+ENV PNPM_VERSION=10.13.1
 RUN corepack use pnpm@$PNPM_VERSION
+ENV PNPM_HOME=/usr/local/bin
 
 # Avoid ERR_PNPM_ENOENT error
 RUN pnpm config set store-dir /tmp/pnpm/store
 
-# Install tbls
-ENV TBLS_VERSION=1.76.1
-RUN curl -o tbls.deb -L https://github.com/k1LoW/tbls/releases/download/v$TBLS_VERSION/tbls_$TBLS_VERSION-1_arm64.deb
-RUN dpkg -i tbls.deb
+# Install Claude Code
+RUN pnpm add -g @anthropic-ai/claude-code@latest
